@@ -10,10 +10,13 @@
 GitHub Pages公開時は、このフォルダ内のファイル一式をリポジトリにアップロードしてください。
 
 
-v24: Firebase account and cross-device sync
+v27: Firebase account and cross-device sync
 - Firebase Authentication: Email/password
 - Cloud Firestore document: users/{uid}/appData/main
 - The first sign-in on an account uploads this device's local data if no cloud document exists.
 - If a cloud document already exists, its data is loaded onto this device.
 - For GitHub Pages, add the published hostname to Firebase Authentication > Settings > Authorized domains.
 - Keep the Firebase project on the Spark plan. Scheduled Firestore backups are not enabled.
+
+
+v27 changes: sync/login panel is hidden on all normal screens and appears only at the very bottom of Settings, whether signed in or signed out.
