@@ -70,6 +70,11 @@ label{font-size:18px!important;margin-top:14px!important}input,select,textarea{f
 /* v24: make the date in the hero card much easier to read */
 .eyebrow{font-size:69px!important;line-height:1.12!important;letter-spacing:-.035em!important;overflow-wrap:anywhere}
 @media(max-width:600px){.eyebrow{font-size:clamp(36px,9vw,48px)!important;line-height:1.15!important}}
+/* v29: mobile-first detail action layout */
+#detailContent .form-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:14px;align-items:stretch}
+#detailContent .form-actions .btn{display:flex;align-items:center;justify-content:center;width:100%;min-width:0;min-height:44px;padding:10px 8px;white-space:normal;word-break:keep-all;overflow-wrap:anywhere;text-align:center;line-height:1.35;writing-mode:horizontal-tb}
+@media(max-width:380px){#detailContent .form-actions{gap:7px}#detailContent .form-actions .btn{font-size:12px;padding:9px 5px}}
+
 
 /* v26: keep sync controls at the bottom of Settings and use a more balanced date size */
 .hero #todayLabel{font-size:clamp(28px,2.5vw,33px)!important;line-height:1.2!important;letter-spacing:-.02em!important;overflow-wrap:normal!important;white-space:normal}
